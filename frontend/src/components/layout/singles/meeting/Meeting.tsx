@@ -53,10 +53,10 @@ export default function Meeting() {
             <div className='Meetings'>
                 {meetings.map(m =>
                     <div className='Meeting' key={m.id}>
-                        <h1>meetingRoom: {m.meetingRoom}</h1>
-                        <h2>Developing: {m.developing.name}</h2>
-                        <h3>startTime: {new Date(m.startTime).toLocaleTimeString()}</h3>
-                        <h3>startTime: {new Date(m.startTime).toLocaleTimeString()}</h3>
+                        <h1>meeting room: {m.meetingRoom}</h1>
+                        <h2>Developing team: {m.developing.name}</h2>
+                        <h3>start time: {new Date(m.startTime).toLocaleString()}</h3>
+                        <h3>finish time: {new Date(m.finishTime).toLocaleString()}</h3>
                         <h4>description: {m.description}</h4>
                     </div>
                 )}
