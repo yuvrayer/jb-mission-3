@@ -1,0 +1,212 @@
+/* .Meeting {
+    display: flex;
+    flex-direction: column;
+    background-color: lightblue;
+    width: 230px;
+    margin: 7px;
+    padding: 7px;
+    border-radius: 10px;
+}
+
+button,
+h1,
+h2,
+h3,
+h4 {
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+button {
+    color: black;
+    font-size: larger;
+    font-weight: 800;
+    background-color: darkgray;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.Meetings {
+    display: flex;
+    flex-flow: row wrap;
+} */
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    font-size: 16px;
+}
+
+/* Center Container */
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Meetings Container */
+.Meetings {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* Individual Meeting */
+.Meeting {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Meeting:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Meeting Title and Details */
+.Meeting h1, .Meeting h2, .Meeting h3, .Meeting h4 {
+    margin-bottom: 12px;
+    color: #444;
+}
+
+.Meeting h1 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.Meeting h2 {
+    font-size: 18px;
+    color: #777;
+}
+
+.Meeting h3 {
+    font-size: 16px;
+    color: #e91e63;
+}
+
+.Meeting h4 {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.4;
+}
+
+/* Button */
+button {
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #c2185b;
+}
+
+button:focus {
+    outline: none;
+}
+
+
+/* Button Styles for the Add Meeting Button */
+.center-container .add-meeting-btn {
+    background-color: #74d7d9;  /* Green background for the "add meeting" button */
+    color: black;  /* White text */
+    border: none;  /* No border */
+    border-radius: 5px;  /* Rounded corners */
+    padding: 12px 24px;  /* Top and bottom padding of 12px, left and right 24px */
+    cursor: pointer;  /* Pointer cursor when hovering */
+    font-size: 16px;  /* Font size */
+    font-weight: bold;  /* Bold text */
+    transition: background-color 0.3s ease, transform 0.2s ease;  /* Transition for color and scale */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Soft shadow around the button */
+}
+
+/* Hover state for the Add Meeting Button */
+.add-meeting-btn:hover {
+    background-color: #24a4a6;  /* Darker green on hover */
+    transform: scale(1.05);  /* Slightly enlarge button */
+}
+
+/* Active state for the Add Meeting Button */
+.add-meeting-btn:active {
+    background-color: #30c0c3;  /* Even darker green when button is clicked */
+    transform: scale(0.98);  /* Slightly shrink the button when clicked */
+}
+
+/* Focus state for the Add Meeting Button */
+.add-meeting-btn:focus {
+    outline: none;  /* Remove the default focus outline */
+    box-shadow: 0 0 0 3px rgba(20, 61, 240, 0.4);  /* Add a green outline for better accessibility */
+    width: 250px;
+}
+
+.center-container span {
+    margin-right: 40px;  /* Adds space between the span and the button */
+}
+
+/* Style for the Select Dropdown */
+select {
+    padding: 12px 20px; /* Same padding as your buttons */
+    font-size: 16px;
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #ddd; /* Light border similar to Meeting cards */
+    background-color: white; /* White background */
+    margin-top: 20px; /* Consistent margin */
+    width: 250px; /* Slightly wider for better readability */
+    cursor: pointer;
+    transition: border-color 0.3s ease, box-shadow 0.2s ease; /* Smooth transition */
+}
+
+/* Hover state for the select */
+select:hover {
+    border-color: #e91e63; /* Red color like the button hover */
+    box-shadow: 0 0 5px rgba(233, 30, 99, 0.2); /* Light shadow on hover */
+}
+
+/* Focus state for the select */
+select:focus {
+    outline: none; /* Remove default focus outline */
+    border-color: #e91e63; /* Red border when focused */
+    box-shadow: 0 0 5px rgba(233, 30, 99, 0.4); /* Slight shadow effect */
+}
+
+span.select-label {
+    font-size: 16px; /* Same font size as buttons */
+    font-weight: bold; /* Bold text for emphasis */
+    color: #555; /* Dark gray color, consistent with the design */
+    margin-bottom: 10px; /* Space between the label and the select dropdown */
+    display: block; /* Makes the span behave like a block element */
+}
+
+.select{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}

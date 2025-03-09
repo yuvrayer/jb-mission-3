@@ -1,0 +1,49 @@
+/* .Developing {
+    border: 1px dashed coral;
+    display: flex;
+    flex-direction: column;
+    background-color: lightblue;
+    width: 500px;
+    margin: 30px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.Developings {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+  
+  span {
+    font-size: 50px;  
+    font-weight: bold; 
+  }
+   */
+   .center-container {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.Developings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the items */
+    gap: 20px;
+}
+
+.Developing {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    width: 400px; /* Define a fixed width for each Developing box */
+}
